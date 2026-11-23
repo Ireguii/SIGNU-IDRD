@@ -1,0 +1,16 @@
+{
+  "name": "signu-idrd",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev:demo": "node scripts/start-demo.cjs",
+    "dev:api": "pnpm --filter @signu/api dev",
+    "dev:mobile": "pnpm --filter @signu/mobile start",
+    "dev:web": "pnpm --filter @signu/mobile web",
+    "check": "pnpm -r typecheck",
+    "test": "pnpm --filter @signu/api test"
+  }
+}

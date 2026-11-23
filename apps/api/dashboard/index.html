@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión de reportes · SIGNU-IDRD</title>
+  <link rel="stylesheet" href="/panel.css">
+  <script src="/panel.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="mast-inner">
+      <div class="brand-mark" aria-hidden="true"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="6" width="16" height="15" rx="2"/><rect x="8" y="3" width="8" height="5" rx="1.5"/><path d="M8 12h8m-8 4h5"/></svg></div>
+      <div><strong>SIGNU-IDRD</strong><span>Gestión de mantenimiento</span></div>
+      <span class="local">Panel local</span>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><h1>Gestión de reportes</h1><p>Revisa las novedades de los parques y actualiza su estado.</p></div>
+      <button id="refresh" type="button" class="secondary">Actualizar bandeja</button>
+    </section>
+    <section id="metrics" class="metrics" aria-label="Indicadores de reportes"></section>
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    <div class="workspace">
+      <section class="queue" aria-label="Bandeja de reportes">
+        <div class="queue-header">
+          <h2>Bandeja</h2>
+          <form id="filters" class="filters">
+            <input name="q" type="search" maxlength="80" placeholder="Referencia, parque o descripción" aria-label="Buscar reportes">
+            <select name="status" aria-label="Filtrar por estado"><option value="">Todos los estados</option></select>
+            <select name="priority" aria-label="Filtrar por prioridad"><option value="">Todas las prioridades</option></select>
+            <button type="submit" class="secondary">Filtrar</button>
+          </form>
+        </div>
+        <div id="tickets" class="tickets"></div>
+        <div class="pagination"><button id="previous" type="button" class="secondary">Anterior</button><span id="page"></span><button id="next" type="button" class="secondary">Siguiente</button></div>
+      </section>
+      <section id="detail" class="detail" aria-label="Detalle del ticket">
+        <div class="empty"><h2>Selecciona un reporte</h2><p>Aquí podrás ver la ubicación, la foto y el historial del ticket.</p></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

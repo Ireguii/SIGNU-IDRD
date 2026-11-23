@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+.expo/
+.signu-data/
+dist/
+expo-env.d.ts
+
+*.log
+.DS_Store

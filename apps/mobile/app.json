@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Cuidemos nuestros parques",
+    "slug": "signu-idrd-demo",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "co.demo.signu.parques"
+    },
+    "ios": {
+      "bundleIdentifier": "co.demo.signu.parques"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Usa tu ubicación para señalar la novedad en el parque."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Selecciona una fotografía para adjuntarla al reporte.",
+          "cameraPermission": "Toma una fotografía para adjuntarla al reporte.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "scheme": "signu-parques-demo",
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

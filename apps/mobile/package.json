@@ -1,0 +1,40 @@
+{
+  "name": "@signu/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "55.0.11",
+    "@expo/vector-icons": "15.1.1",
+    "expo": "55.0.27",
+    "expo-clipboard": "~55.0.14",
+    "expo-constants": "55.0.16",
+    "expo-crypto": "~55.0.16",
+    "expo-font": "55.0.8",
+    "expo-image-picker": "55.0.21",
+    "expo-linking": "55.0.16",
+    "expo-location": "~55.1.11",
+    "expo-router": "55.0.16",
+    "expo-status-bar": "55.0.6",
+    "leaflet": "1.9.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-maps": "1.27.2",
+    "react-native-safe-area-context": "5.6.2",
+    "react-native-screens": "4.23.0",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.0",
+    "@types/react": "~19.2.17",
+    "typescript": "~5.9.2"
+  }
+}

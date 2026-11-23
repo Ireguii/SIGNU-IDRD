@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+allowBuilds:
+  sharp: true
+  esbuild: true
+# Keep the demo's static renderer compatible with the SDK 55 patches pinned by Vive IDRD.
+overrides:
+  "@expo/cli>@expo/router-server": "55.0.18"

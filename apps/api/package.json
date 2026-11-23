@@ -1,0 +1,32 @@
+{
+  "name": "@signu/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --import tsx src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/*.test.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.16",
+    "@electric-sql/pglite-postgis": "0.2.16",
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/platform-express": "^11.1.0",
+    "express-rate-limit": "^8.0.0",
+    "helmet": "^8.0.0",
+    "pg": "^8.0.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.0",
+    "sharp": "^0.34.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "~5.9.0"
+  }
+}

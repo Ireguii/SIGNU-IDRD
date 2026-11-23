@@ -1,0 +1,18 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.5
+    environment:
+      POSTGRES_DB: signu
+      POSTGRES_USER: signu
+      POSTGRES_PASSWORD: signu-local-only
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - signu-postgis:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U signu -d signu"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+volumes:
+  signu-postgis:
